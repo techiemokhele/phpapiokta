@@ -1,0 +1,3 @@
+Securing the PHP REST API with OAuth 2.0
+
+Using Okta as the authorization server and I’ll implement the Client Credentials Flow. The flow is recommended for machine-to-machine authentication when the client is private and works like this: The client application holds a Client ID and a Secret; The client passes these credentials to Okta and obtains an access token; The client sends the access token to the REST API server; The server asks Okta for some metadata that allows it to verify tokens and validates the token (alternatively, it can just ask Okta to verify the token); The server then provides the API resource if the token is valid, or responds with a 401 Unauthorized status code if the token is missing, expired or invalid.
